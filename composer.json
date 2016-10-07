@@ -1,0 +1,23 @@
+{
+    "name": "moein7tl/yii2-excel-action",
+    "description": "An easy way to export yii2 models into excel files",
+    "require": {
+        "moonlandsoft/yii2-phpexcel": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2": "^2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Moein Hosseini",
+            "email": "moein7tl@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "moein7tl\\yii2ExcelAction\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
