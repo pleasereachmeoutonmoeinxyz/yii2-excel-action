@@ -33,7 +33,7 @@ class ExportAction extends Action {
         if (!isset($model) || ! class_exists($model)) {
             throw new InvalidModelException("Model {$model} doesn't exist.");
         }
-        
+
         if (!isset($this->queryColumns) || count($this->queryColumns) == 0){
             throw new InvalidColumnsException("Query Columns should defined.");
         }
@@ -41,7 +41,9 @@ class ExportAction extends Action {
         $data   =   Yii::$app->request->post();
 
         foreach ($this->queryColumns as $column) {
-            $condition[]    =   [$column => $data[$column]];
+            if(isset($data[$column])){
+                $condition[]    =   [$column => $data[$column]];
+            }
         }
 
         return Excel::export([
