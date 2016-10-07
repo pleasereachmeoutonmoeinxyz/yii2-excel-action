@@ -6,14 +6,14 @@
  * Time: 4:04 PM
  */
 
-namespace moein7tl\Yii2ExcelAction\actions;
+namespace moein7tl\yii2ExcelAction\actions;
 
-use moein7tl\Yii2ExcelAction\exceptions\InvalidColumnsException;
 use Yii;
 use yii\db\ActiveRecord;
 use yii\rest\Action;
 use moonland\phpexcel\Excel;
-use moein7tl\Yii2ExcelAction\exceptions\InvalidModelException;
+use moein7tl\yii2ExcelAction\exceptions\InvalidModelException;
+use moein7tl\yii2ExcelAction\exceptions\InvalidColumnsException;
 
 class ExportAction extends Action {
 

@@ -6,7 +6,7 @@
  * Time: 5:14 PM
  */
 
-namespace moein7tl\Yii2ExcelAction\exceptions;
+namespace moein7tl\yii2ExcelAction\exceptions;
 
 use yii\base\Exception;
 

@@ -6,8 +6,10 @@
  * Time: 4:25 PM
  */
 
-namespace moein7tl\Yii2ExcelAction\exceptions;
+namespace moein7tl\yii2ExcelAction\exceptions;
 
-class InvalidModelException extends \yii\base\Exception{
+use yii\base\Exception;
+
+class InvalidModelException extends Exception{
 
 }
