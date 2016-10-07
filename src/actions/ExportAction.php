@@ -30,7 +30,7 @@ class ExportAction extends Action {
         $model      =   $this->modelClass;
         $condition   =   [];
 
-        if (!isset($model) || ! class_exists($model) || is_subclass_of()) {
+        if (!isset($model) || ! class_exists($model)) {
             throw new InvalidModelException("Model {$model} doesn't exist.");
         }
         
